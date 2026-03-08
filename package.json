@@ -27,7 +27,8 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"node server/server.js\"",
+    "start": "node server/server.js",
+    "dev": "concurrently \"react-scripts start\" \"node server/server.js\"",
     "frontend": "react-scripts start",
     "server": "node server/server.js",
     "seed": "node server/seed.js",
