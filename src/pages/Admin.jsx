@@ -9,35 +9,35 @@ import HourglassEmptyIcon from '@mui/icons-material/HourglassEmpty';
 import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 import LogoutIcon from '@mui/icons-material/Logout';
 import {
-  Alert,
-  AppBar,
-  Avatar,
-  Box,
-  Button,
-  Card,
-  CardContent,
-  Chip,
-  Container,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogTitle,
-  Divider,
-  Grid,
-  IconButton,
-  MenuItem,
-  Paper,
-  Tab,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  Tabs,
-  TextField,
-  Toolbar,
-  Typography
+    Alert,
+    AppBar,
+    Avatar,
+    Box,
+    Button,
+    Card,
+    CardContent,
+    Chip,
+    Container,
+    Dialog,
+    DialogActions,
+    DialogContent,
+    DialogTitle,
+    Divider,
+    Grid,
+    IconButton,
+    MenuItem,
+    Paper,
+    Tab,
+    Table,
+    TableBody,
+    TableCell,
+    TableContainer,
+    TableHead,
+    TableRow,
+    Tabs,
+    TextField,
+    Toolbar,
+    Typography
 } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -167,16 +167,6 @@ const Admin = () => {
     } catch (err) {
       setError('Failed to update status');
     }
-  };
-
-  const getStatusColor = (status) => {
-    const colors = {
-      'Confirmed': 'success',
-      'Pending': 'warning',
-      'Cancelled': 'error',
-      'Completed': 'info'
-    };
-    return colors[status] || 'default';
   };
 
   // Calculate statistics

@@ -31,6 +31,6 @@ app.get('/', (req, res) => {
   res.json({ message: 'Hospital Management System API is running' });
 });
 
-app.listen(PORT, () => {
+app.listen(5000, '0.0.0.0', () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });
